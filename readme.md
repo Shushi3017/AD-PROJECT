@@ -4,11 +4,11 @@
 <br/>
 
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/VianTibay/">
+    <!-- optional <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100"> -->
   </a>
 <!-- * Title Section -->
-  <h3 align="center">AD - CI4 Template</h3>
+  <h3 align="center">AD-PROJECT</h3>
 </div>
 
 <!-- * Description Section -->
@@ -19,7 +19,7 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 
 <br/>
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)
+![](https://visit-counter.vercel.app/counter.png?page=VianTibay/AD-PROJECT)
 
 <!-- ! Make sure it was similar to your github -->
 
@@ -33,21 +33,21 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
   <ol>
     <li>
       <a href="#overview">Overview</a>
-      <ol>
-        <li>
-          <a href="#key-components">Key Components</a>
-        </li>
-        <li>
+       <li>
           <a href="#technology">Technology</a>
         </li>
-      </ol>
-    </li>
     <li>
       <a href="#rules-practices-and-principles">Rules, Practices and Principles</a>
     </li>
     <li>
+      <a href="#ports--database">Ports & Database</a>
+    </li>
+    <li>
       <a href="#resources">Resources</a>
     </li>
+      </ol>
+    </li>
+    
   </ol>
 </details>
 
@@ -61,16 +61,6 @@ It is designed to be **easy to start with** and a **reference for adding new fea
 
 * **Purpose**: a clean starting point for CI4 apps.
 * **Audience**: developers who want a predictable structure and quick onboarding.
-
-### Key Components
-
-These are **sample modules** included (or suggested) for learning how to add features:
-
-| Component                 | Purpose                                                             | Notes                                                   |
-| ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
-| **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
-| **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
 
  <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
 
@@ -92,63 +82,14 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
+<!-- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white) -->
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
 
 <!-- ! Keep only the used technology -->
 
 ---
 
-## Quick Start (Docker)
 
-Run the development stack and the app (rebuild if needed):
-
-```cmd
-docker compose up -d --build
-```
-
-Common utility commands (run inside the project root):
-
-- Run migrations:
-```cmd
-docker compose exec php composer migrate
-```
-- Run seeders:
-```cmd
-docker compose exec php composer seed
-```
-- Run tests:
-```cmd
-docker compose exec php composer test
-```
-
-- Create a migration (using CodeIgniter's spark tool):
-```cmd
-docker compose exec php php spark make:migration CreateUsersTabel
-```
-
-- Create a model (using CodeIgniter's spark tool):
-
-```cmd
-docker compose exec php php spark make:model UsemModel
-```
-
-- Create an entity (value object for a single record) (using CodeIgniter's spark tool):
-```cmd
-docker compose exec php php spark make:entity Uzer
-```
-
-- Create a controller (add --resource to scaffold resourceful methods if you like) (using CodeIgniter's spark tool):
-```cmd
-docker compose exec php php spark make:controller Usars
-```
-
-- Create a seeder (for test/dev data) (using CodeIgniter's spark tool):
-```cmd
-docker compose exec php php spark make:seeder UserzSeeder
-```
-
-If you prefer, you can include `-f "compose.yaml"` explicitly; the shorter commands above work when running from the repo root.
 
 ## Ports & Database
 
@@ -156,7 +97,7 @@ Defaults used in this project (host mapping):
 
 | Service     | Host port |
 |-------------|-----------:|
-| nginx (app) | 8090      |
+| nginx (app) | 8017      |
 | phpMyAdmin  | 8091      |
 | MySQL       | 3390      |
 
