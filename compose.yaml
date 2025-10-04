@@ -1,5 +1,4 @@
-name: ad-ci4-devProject
-version: '3.8'
+name: ad-ci4
 
 services:
   php:
