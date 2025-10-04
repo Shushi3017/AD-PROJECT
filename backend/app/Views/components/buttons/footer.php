@@ -52,3 +52,10 @@
         <p class="text-sm text-white/90">Copyright &copy; <?= date('Y') ?> - All rights reserved by Shushi3017</p>
     </aside>
 </footer>
+<script src="https://cdn.tailwindcss.com"></script>
+                  
+         
+         <div class="container mx-auto px-4 py-4 text-center text-gray-400 text-sm">
+              &copy; <?= date('Y') ?> Vian Tibay Project AD-Project. All rights reserved.
+          </div>
+          
