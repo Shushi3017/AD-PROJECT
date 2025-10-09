@@ -17,5 +17,6 @@
     <div class="footer">
         <?= view("Components/buttons/footer.php") ?>
     </div>
+    
 </body>
 </html>
