@@ -5,6 +5,15 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+$routes->get('/', 'Home::index');
+$routes->get('/user', 'User::landing');
+$routes->get('/user/signup', 'User::login');
+$routes->post('/user/signup', 'User::signup');
+$routes->get('/landing', 'User::landing');
+$routes->get('/user/login', 'User::login');
+$routes->get('/user/roadmap', 'User::roadmap');
+$routes->get('/user/moodboard', 'User::moodBoard');
+$routes->get('/user/login', 'User::login');
 $routes->get('/user/components/btn2', 'User::btn2');
 $routes->get('/user/components/btn3', 'User::btn3');
 $routes->get('/user/components/btn4', 'User::btn4');
@@ -22,4 +31,5 @@ $routes->get('/user/components/btn4', 'User::btn4');
 // $routes->get('/user/roadmap', 'User::roadmap');
 
 
->>>>>>> Stashed changes
+
+
