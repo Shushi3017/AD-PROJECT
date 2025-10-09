@@ -20,8 +20,8 @@
   <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Enter Moodboard</button>
   </form>
 
-  <h1 class="text-3xl font-bold mb-6">Mood Board (Season: <?= htmlspecialchars($season) ?>)</h1>
-=======
+  <h1 class="text-3xl font-bold mb-6">Mood Board</h1>
+
 
 
 
@@ -47,7 +47,7 @@
   <button class="bg-blue-500 text-white px-4 py-2 rounded">Primary</button>
   <button class="bg-green-500 text-white px-4 py-2 rounded">Secondary</button>
 
-=======
+
   <button class="bg-green-500 text-white px-4 py-2 rounded">Secondary</button>
 
   <button class="border border-white px-4 py-2 rounded">Bordered</button>

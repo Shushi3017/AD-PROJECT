@@ -11,15 +11,15 @@
         <h1 class="text-4xl font-bold mb-4 tracking-wide">Welcome to AD-Project</h1>
         <p class="text-lg mb-8 text-gray-200">Your trusted platform for modern memorial services.</p>
         <?= view("Components/buttons/Home.php") ?>
-        <a href="/"
+      
+        <br>
+        <a href="/user/login"
            class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
                   hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-white hover:scale-105
                   focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
-           Back to Home
+            Login
         </a>
-        <br>
-        <?= view("Components/buttons/login.php") ?>
         <br>
         <a href="/user/signup"
            class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
