@@ -30,6 +30,19 @@ class User extends BaseController
     {
         return view('user/roadmap');
     }
+    // public function btn2(): string
+    // {
+    //     return view('user/btn3');
+    // }
+    // public function btn3(): string
+    // {
+    //     return view('user/btn3');
+    // }
+    // public function btn4(): string
+    // {
+    //     return view('user/btn4');
+    // }
+    
 
     // For checking components
     // public function component(): string

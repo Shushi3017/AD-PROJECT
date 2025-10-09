@@ -20,14 +20,19 @@
   <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Enter Moodboard</button>
   </form>
 
-  <h1 class="text-3xl font-bold mb-6">Mood Board (Season: <?= htmlspecialchars($season) ?>)</h1>
+<<<<<<< Updated upstream
+  <h1 class="text-3xl font-bold mb-6">Mood Board</h1>
+
+
+
+
+
+
+
 =======
-
-
-
-
-
-
+  <h1 class="text-3xl font-bold mb-6">Mood Board </h1>
+  
+>>>>>>> Stashed changes
   <!-- Color Palette -->
   <h2 class="text-xl font-semibold mb-2">Color Palette</h2>
   <div class="flex space-x-4 mb-6">
@@ -47,7 +52,7 @@
   <button class="bg-blue-500 text-white px-4 py-2 rounded">Primary</button>
   <button class="bg-green-500 text-white px-4 py-2 rounded">Secondary</button>
 
-=======
+
   <button class="bg-green-500 text-white px-4 py-2 rounded">Secondary</button>
 
   <button class="border border-white px-4 py-2 rounded">Bordered</button>
