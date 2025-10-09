@@ -230,6 +230,7 @@
         <h2>The small framework with powerful features</h2>
 
     </div>
+<<<<<<< Updated upstream
 
 </header>
 
@@ -327,5 +328,8 @@
 
 <!-- -->
 
+=======
+    
+>>>>>>> Stashed changes
 </body>
 </html>
