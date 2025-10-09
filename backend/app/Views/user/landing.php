@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,7 @@
         <h1 class="text-4xl font-bold mb-4 tracking-wide">Welcome to AD-Project</h1>
         <p class="text-lg mb-8 text-gray-200">Your trusted platform for modern memorial services.</p>
         <?= view("Components/buttons/Home.php") ?>
-      
-        <br>
-        <a href="/user/login"
+        <a href="/"
            class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
                   hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-white hover:scale-105
                   focus:outline-none focus:ring-2 focus:ring-purple-500"
@@ -22,8 +20,8 @@
         </a>
         <br>
         <a href="/user/signup"
-           class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
-                  hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-white hover:scale-105
+           class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition-colors duration-200 ease-in-out
+                  hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-black hover:scale-105
                   focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
             Signup
@@ -31,8 +29,8 @@
 
         <br>
          <a href="/user/moodboard"
-           class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
-                  hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-white hover:scale-105
+           class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition-colors duration-200 ease-in-out
+                  hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-black hover:scale-105
                   focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
             Moodboard
@@ -41,8 +39,8 @@
                <br> 
         <br>
         <a href="/user/roadmap"
-           class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
-                  hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-white hover:scale-105
+           class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition-colors duration-200 ease-in-out
+                  hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-black hover:scale-105
                   focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
             Roadmap

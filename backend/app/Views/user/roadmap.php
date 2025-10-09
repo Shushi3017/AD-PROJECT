@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <title>Road Map</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
+<<<<<<< Updated upstream
 <body class="bg-black text-white p-10">
+=======
+>>>>>>> Stashed changes
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
