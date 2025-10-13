@@ -10,7 +10,7 @@
     <div class="container mx-auto px-4 py-10 text-center flex-1 flex flex-col justify-center items-center">
         <h1 class="text-4xl font-bold mb-4 tracking-wide">Welcome to AD-Project</h1>
         <p class="text-lg mb-8 text-gray-200">Your trusted platform for modern memorial services.</p>
-        <?= view("Components/buttons/Home.php") ?>
+         <!-- view("Components/buttons/Home.php")  -->
         <br>
         <a href="/user/login"
            class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
@@ -49,7 +49,7 @@
         </a>
     </div>
     <footer>
-       <?= view('/Components/buttons/footer') ?>
+        <!-- view('/Components/buttons/footer')  -->
     </footer>
 </body>
 </html>
