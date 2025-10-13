@@ -1,17 +1,14 @@
-<script src="https://cdn.tailwindcss.com"></script>
-<div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-  <div class="md:flex">
-    <div class="md:flex-shrink-0">
-      <img class="h-48 w-full object-cover md:w-48" src="https://via.placeholder.com/300x200" alt="Image">
-    </div>
-    <div class="p-8">
-      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case Study</div>
-      <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
-      <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
-      <div class="mt-4">
-        <button class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 focus:outline-none">Read More</button>
-        <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400 focus:outline-none ml-2">Share</button>
-      </div>
-    </div>
-  </div>
+if (!isset($title)) $title = "Card Title";
+if (!isset($description)) $description = "Card description text goes here.";
+?>
+<div class="bg-gray-800 rounded-xl p-5 shadow hover:shadow-teal-500/20 transition">
+  <h3 class="text-lg font-semibold text-white mb-2"><?= $title ?></h3>
+  <p class="text-gray-400 mb-4"><?= $description ?></p>
+
+  <?php if (!empty($buttonLabel)): ?>
+    <a href="<?= $buttonLink ?? '#' ?>"
+       class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium py-2 px-4 rounded-lg">
+       <?= $buttonLabel ?>
+    </a>
+  <?php endif; ?>
 </div>
