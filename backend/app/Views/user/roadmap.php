@@ -118,9 +118,5 @@
     </a>
   </div>
     </div>
-
-  <footer>
-<?= view('/Components/buttons/footer')?>
-  </footer>
 </body>
 </html>
