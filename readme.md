@@ -11,11 +11,7 @@
   <h3 align="center">AD-PROJECT</h3>
 </div>
 
-<!-- * Description Section -->
-<div align="center">
-This repository is a beginner-friendly CodeIgniter 4 template.  
-It helps teams quickly bootstrap backend + frontend projects, with simple sample modules that show how to extend the system.
-</div>
+
 
 <br/>
 
@@ -55,7 +51,9 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
+This template is an opinionated, minimal CodeIgniter 4 starter that helps you bootstrap backend + frontend features quickly.  
+It enforces a predictable layout (Controllers → Services → Repositories → Views), sensible defaults (Docker, Tailwind via CDN, MySQL), and small sample modules as learning references.  
+Follow the repository’s naming, testing, and commit conventions when extending or customizing the project.
 
 It is designed to be **easy to start with** and a **reference for adding new features**.
 
@@ -81,9 +79,6 @@ It is designed to be **easy to start with** and a **reference for adding new fea
 #### Databases
 
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-<!-- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white) -->
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
 
 <!-- ! Keep only the used technology -->
 
@@ -98,8 +93,6 @@ Defaults used in this project (host mapping):
 | Service     | Host port |
 |-------------|-----------:|
 | nginx (app) | 8017      |
-| phpMyAdmin  | 8091      |
-| MySQL       | 3390      |
 
 Database credentials used in examples and CI:
 
