@@ -31,7 +31,7 @@
                 </a>
                 <a href="/landing" 
                    class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-pink-400 transition font-semibold shadow">
-                   Back to Landing
+                   Back to Landing.
                 </a>
             </div>
         </form>
