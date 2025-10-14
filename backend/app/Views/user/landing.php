@@ -44,52 +44,63 @@
     <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg text-lg font-semibold shadow-lg">Shop Now</button>
 
     <!-- CAROUSEL -->
-    <div class="relative w-full mt-10">
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96 border-2 border-yellow-400" id="gameCarousel">
-        <div class="carousel-item absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out">
-          <img src="https://images.unsplash.com/photo-1606813902779-9b788d7f1c7d" class="w-full h-full object-cover" alt="Game 1">
-        </div>
-        <div class="carousel-item absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out">
-          <img src="#" class="w-full h-full object-cover" alt="Game 2">
-        </div>
-        <div class="carousel-item absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out">
-          <img src="#" class="w-full h-full object-cover" alt="Game 3">
-        </div>
-      </div>
+    <section class="w-full mt-10">
+  <div class="relative w-full max-w-[1400px] mx-auto overflow-hidden rounded-lg border-2 border-yellow-400" id="gameCarousel">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg"
+           alt="Game 1"
+           class="w-full h-[600px] object-cover object-center" />
     </div>
-  </section>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+      <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1RLdppgLllgGZlkjuvHBu6/237f7e968827f4abda462a311a0f1faf/RED_KEYART_STD_RGB_WW.jpg"
+           alt="Assassin’s Creed Shadows"
+           class="w-full h-[600px] object-cover object-center" />
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+      <img src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring-nightreign/01-news/ELDEN-RING-NIGHTREIGN-announcement-thumbnail.jpg?twic=v1/resize=760/step=10/quality=80"
+           alt="Game 3"
+           class="w-full h-[600px] object-cover object-center" />
+    </div>
+
+  </div>
+</section>
 
   <!-- FEATURED GAMES -->
   <section id="games" class="px-8 py-16">
-    <h2 class="text-3xl font-bold mb-8 text-center highlight">Top Trending Games</h2>
+    <h2 class="text-3xl font-bold mb-8 text-center highlight">Top Trending Games For Mobile</h2>
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-gray-900 rounded-lg border-2 border-yellow-500 shadow-lg overflow-hidden hover:scale-105 transition">
-        <img src="#" alt="Game" class="w-full h-56 object-cover">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQiX0afyge6yOq8eY9Ob4Ol0AvloRv_VB05A&s" alt="Game" class="w-full h-56 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Cyber Rage</h3>
-          <p class="text-gray-400 text-sm mb-3">An action-packed sci-fi shooter with stunning visuals.</p>
+          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Roblox</h3>
+          <p class="text-gray-400 text-sm mb-3">Still dominates mobile in monthly active users</p>
           <?= view('Components/buttons/download.buttons.php') ?>
         </div>
       </div>
 
       <div class="bg-gray-900 rounded-lg border-2 border-yellow-500 shadow-lg overflow-hidden hover:scale-105 transition">
-        <img src="#" alt="Game" class="w-full h-56 object-cover">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjhV2nbNgwaSxokluI2gO2nKjfA2K37B086Q&s" alt="Game" class="w-full h-56 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Legends Arena</h3>
-          <p class="text-gray-400 text-sm mb-3">Compete with players worldwide in this fantasy arena.</p>
+          <h3 class="text-xl font-semibold mb-2 text-yellow-400">PUBG Mobile</h3>
+          <p class="text-gray-400 text-sm mb-3">Continues to be one of the most played and downloaded shooter games.</p>
+             <?= view('Components/buttons/download.buttons.php') ?>
+        </div>
+      </div>
+      <div class="bg-gray-900 rounded-lg border-2 border-yellow-500 shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://play-lh.googleusercontent.com/JH136Ry9BOxHs9cIpcw5yo7A5UaSsNJz9Ovj_vqqytRjJuSPtEZTF51dtpyJtZcxdg=w526-h296-rw" alt="Game" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Block Blast</h3>
+          <p class="text-gray-400 text-sm mb-3">On iOS it was the most downloaded game of 2025 so far</p>
              <?= view('Components/buttons/download.buttons.php') ?>
         </div>
       </div>
 
-      <div class="bg-gray-900 rounded-lg border-2 border-yellow-500 shadow-lg overflow-hidden hover:scale-105 transition">
-        <img src="#" alt="Game" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Pixel Adventure</h3>
-          <p class="text-gray-400 text-sm mb-3">A nostalgic pixel-style game with endless exploration.</p>
-            <?= view('Components/buttons/download.buttons.php') ?>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- SERVICES -->
