@@ -1,8 +1,3 @@
-<!-- <*?php if (validation_errors()): ?>
-    <script>
-        alert("<*?= strip_tags(implode('\n', validation_errors())) ?>");
-    </script>
-<*?php endif; ?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
