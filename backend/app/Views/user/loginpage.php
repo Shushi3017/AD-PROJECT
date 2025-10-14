@@ -29,7 +29,7 @@
                    class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-indigo-400 transition font-semibold shadow">
                    Sign Up
                 </a>
-                <a href="/landing" 
+                <a href="/" 
                    class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-pink-400 transition font-semibold shadow">
                    Back to LandingPage
                 </a>
