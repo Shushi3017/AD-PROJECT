@@ -6,12 +6,9 @@ use App\Controllers\BaseController;
 
 class User extends BaseController
 {
-    public function landing(): string
+    public function login(): string
     {
-
-
-
-        return view('user/landing');
+        return view('user/login');
     }
   
 
