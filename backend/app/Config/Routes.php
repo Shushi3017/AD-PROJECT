@@ -7,10 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'User::landingPage');
-$routes->get('/user/signup', 'User::signup');
-$routes->get('/user/login', 'User::login');
-$routes->get('/user/roadmap', 'User::roadmap');
-$routes->get('/user/moodboard', 'User::moodBoard');
+
 
 
 
