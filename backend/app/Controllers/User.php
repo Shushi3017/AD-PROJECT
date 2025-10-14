@@ -6,9 +6,9 @@ use App\Controllers\BaseController;
 
 class User extends BaseController
 {
-    public function moodboard(): string
+    public function roadmap(): string
     {
-        return view('user/moodboard');
+        return view('user/roadmap');
     }
     // public function btn2(): string
     // {

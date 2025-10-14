@@ -6,6 +6,5 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('/moodboard', 'User::moodboard');
-
+$routes->get('/roadmap', 'User::roadmap');
 
