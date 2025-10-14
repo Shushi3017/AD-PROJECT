@@ -6,6 +6,6 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('/signup', 'User::signup');
+$routes->get('/moodboard', 'User::moodboard');
 
 
