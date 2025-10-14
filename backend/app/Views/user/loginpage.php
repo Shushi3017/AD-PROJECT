@@ -25,7 +25,7 @@
             </button>
 
             <div class="flex justify-between mt-4">
-                <a href="/user/signup" 
+                <a href="/signup" 
                    class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-indigo-400 transition font-semibold shadow">
                    Sign Up
                 </a>
