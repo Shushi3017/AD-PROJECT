@@ -10,18 +10,24 @@ class User extends BaseController
     {
         return view('user/roadmap');
     }
-    // public function btn2(): string
-    // {
-    //     return view('user/btn3');
-    // }
-    // public function btn3(): string
-    // {
-    //     return view('user/btn3');
-    // }
-    // public function btn4(): string
-    // {
-    //     return view('user/btn4');
-    // }
+    public function landing(): string
+    {
+        return view('user/landing');
+    }
+    public function moodboard(): string
+    {
+        return view('user/moodboard');
+    }
+    
+     public function signup(): string
+     {
+         return view('user/signup');
+     }
+     public function login(): string
+     {
+         return view('user/loginpage');
+     }
+     
 
     
     
