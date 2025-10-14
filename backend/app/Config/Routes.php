@@ -7,6 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 
-$routes->get('/login', 'User::login');
+
 
 
