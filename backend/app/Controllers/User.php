@@ -6,9 +6,9 @@ use App\Controllers\BaseController;
 
 class User extends BaseController
 {
-    public function login(): string
+    public function signup(): string
     {
-        return view('user/login');
+        return view('user/signup');
     }
     // public function btn2(): string
     // {
