@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>LoginPage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
