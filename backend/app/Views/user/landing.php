@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     html {
-      scroll-behavior: smooth; /* ✅ Smooth scrolling when clicking links */
+      scroll-behavior: smooth; 
     }
     body {
       font-family: 'Inter', sans-serif;
