@@ -47,7 +47,6 @@
   <button class="bg-blue-500 text-white px-4 py-2 rounded">Primary</button>
   <button class="bg-green-500 text-white px-4 py-2 rounded">Secondary</button>
 
-=======
   <button class="bg-green-500 text-white px-4 py-2 rounded">Secondary</button>
 
   <button class="border border-white px-4 py-2 rounded">Bordered</button>
