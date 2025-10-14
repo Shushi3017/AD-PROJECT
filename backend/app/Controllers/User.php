@@ -42,6 +42,8 @@ class User extends BaseController
     // {
     //     return view('user/btn4');
     // }
+
+    
     
 
     // For checking components
