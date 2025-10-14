@@ -31,16 +31,7 @@
 <body class="bg-black text-white">
 
   <!-- NAVBAR -->
-  <header class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-90 fixed w-full z-50 border-b border-yellow-500 shadow-md">
-    <h1 class="text-2xl font-bold text-yellow-400">GameVerse</h1>
-    <nav class="space-x-6 hidden md:block">
-      <a href="#home" class="hover:text-yellow-400">Home</a>
-      <a href="#games" class="hover:text-yellow-400">Games</a>
-      <a href="#services" class="hover:text-yellow-400">Services</a>
-      <a href="#contact" class="hover:text-yellow-400">Contact</a>
-    </nav>
-    <div class="flex items-center space-x-2">
-      <a href="#contact" class="hover:text-yellow-400">Login</a>
+  <?= view ('Components/header.php')?>
       <?= view('Components/buttons/border-buttons.php')?>
     </div>
   </header>
@@ -77,7 +68,7 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2 text-yellow-400">Cyber Rage</h3>
           <p class="text-gray-400 text-sm mb-3">An action-packed sci-fi shooter with stunning visuals.</p>
-          <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded font-semibold">Buy Now</button>
+          <?= view('Components/buttons/download.buttons.php') ?>
         </div>
       </div>
 
@@ -86,7 +77,7 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2 text-yellow-400">Legends Arena</h3>
           <p class="text-gray-400 text-sm mb-3">Compete with players worldwide in this fantasy arena.</p>
-          <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded font-semibold">Buy Now</button>
+             <?= view('Components/buttons/download.buttons.php') ?>
         </div>
       </div>
 
@@ -95,7 +86,7 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2 text-yellow-400">Pixel Adventure</h3>
           <p class="text-gray-400 text-sm mb-3">A nostalgic pixel-style game with endless exploration.</p>
-          <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded font-semibold">Buy Now</button>
+            <?= view('Components/buttons/download.buttons.php') ?>
         </div>
       </div>
     </div>
@@ -132,7 +123,7 @@
 
   <!-- FOOTER -->
   <footer id="contact" class="bg-black py-8 text-center text-gray-400 border-t border-yellow-500">
-  <!-- add footer components -->
+  <?= view ('Components/footer')?>
   </footer>
 
   <!-- CAROUSEL SCRIPT -->
