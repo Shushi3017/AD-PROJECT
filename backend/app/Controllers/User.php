@@ -6,9 +6,9 @@ use App\Controllers\BaseController;
 
 class User extends BaseController
 {
-    public function landing(): string
+    public function signup(): string
     {
-        return view('user/landing');
+        return view('user/signup');
     }
   
 
