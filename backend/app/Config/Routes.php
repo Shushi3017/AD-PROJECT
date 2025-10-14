@@ -6,6 +6,5 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('/user', 'User::landing');
-$routes->get('/', 'Home::index');
+$routes->get('/roadmap', 'User::roadmap');
 
