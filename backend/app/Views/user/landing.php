@@ -132,7 +132,7 @@
 
   <!-- FOOTER -->
   <footer id="contact" class="bg-black py-8 text-center text-gray-400 border-t border-yellow-500">
-  
+  <!-- add footer components -->
   </footer>
 
   <!-- CAROUSEL SCRIPT -->
