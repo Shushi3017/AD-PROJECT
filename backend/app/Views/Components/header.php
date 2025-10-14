@@ -24,4 +24,4 @@
     <a href="#contact" class="text-white hover:text-yellow-400"><?= $navbar['Label_contact'] ?></a>
     </nav>
     <div class="flex items-center space-x-2">
-      <a href="#login" class="hover:text-yellow-400"><?= $navbar['Label_login'] ?></a>
+      <a href="/login" class="hover:text-yellow-400"><?= $navbar['Label_login'] ?></a>
