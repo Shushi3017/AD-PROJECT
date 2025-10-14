@@ -1,13 +1,8 @@
-<!-- <*?php if (validation_errors()): ?>
-    <script>
-        alert("<*?= strip_tags(implode('\n', validation_errors())) ?>");
-    </script>
-<*?php endif; ?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>LoginPage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -30,13 +25,13 @@
             </button>
 
             <div class="flex justify-between mt-4">
-                <a href="/user/signup" 
+                <a href="/signup" 
                    class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-indigo-400 transition font-semibold shadow">
                    Sign Up
                 </a>
-                <a href="/landing" 
+                <a href="/" 
                    class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-pink-400 transition font-semibold shadow">
-                   Back to Landing
+                   Back to LandingPage
                 </a>
             </div>
         </form>

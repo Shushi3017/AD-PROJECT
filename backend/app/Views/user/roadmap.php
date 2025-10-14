@@ -1,119 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Road Map</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameSell Roadmap</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<<<<<<< Updated upstream
-<body class="bg-black text-white p-10">
-=======
->>>>>>> Stashed changes
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<body class="bg-black min-h-screen">
-  <div class="p-4 mt-4">
-    <h1 class="text-4xl text-center font-semibold mb-6 text-gray-50">Road Map Status</h1>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#111111] text-gray-100 font-sans">
+
+  <!-- ✅ HEADER (fixed, with spacing below to prevent overlap) -->
    
-    <div class="container">
-      <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
-
-        <div class="flex md:contents">
-          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
-            <div class="h-full w-6 flex items-center justify-center">
-              <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
-            </div>
-            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
-              <i class="fas fa-check-circle text-white"></i>
-            </div>
-          </div>
-          <div class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition hover:bg-green-600 cursor-pointer">
-            <h3 class="font-semibold text-lg mb-1">Login Page</h3>
-          </div>
+<header class="z-50 bg-[#111111]/80 backdrop-blur-sm border-b border-yellow-400/20 fixed w-full">
+    <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-90 w-full">
+        <h1 class="text-2xl font-bold text-yellow-400">GameVerse</h1>
+        <nav class="space-x-6 hidden md:block">
+            <a href="/" class="text-white hover:text-yellow-400">Home</a>
+            <a href="/" class="text-white hover:text-yellow-400">Games</a>
+            <a href="/" class="text-white hover:text-yellow-400">Services</a>
+            <a href="#contact" class="text-white hover:text-yellow-400">Contact</a>
+        </nav>
+        <div class="flex items-center space-x-2">
+            <a href="/login" class="hover:text-yellow-400">Login</a>
+            <?= view('Components/buttons/border-buttons.php')?>
         </div>
+    </div>
+</header>
+  </header>
 
-        <div class="flex md:contents">
-          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
-            <div class="h-full w-6 flex items-center justify-center">
-              <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
-            </div>
-            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
-              <i class="fas fa-check-circle text-white"></i>
+  <!-- ✅ Add padding-top so content doesn't hide behind header -->
+  <main class="pt-24">
+    <div class="container mx-auto max-w-4xl py-12 px-4">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">Roadmap</h1>
+        <p class="text-lg text-gray-400">Our journey to bringing you the ultimate marketplace.</p>
+      </div>
+
+      <div class="relative">
+        <div class="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-full bg-yellow-400/30"></div>
+        <div class="md:hidden absolute top-0 left-6 w-0.5 h-full bg-yellow-400/30"></div>
+
+        <div class="space-y-12 md:space-y-0">
+
+          <!-- ITEM 1 -->
+          <div class="md:w-1/2 md:pr-8">
+            <div class="group relative ml-12 md:ml-0 bg-[#1c1c1c] p-6 rounded-lg border border-yellow-400/30 
+                        hover:-translate-y-1 hover:shadow-lg hover:shadow-yellow-400/10 
+                        transition-all duration-300 cursor-pointer
+                        after:content-[''] after:bg-[url('ghost.png')] after:bg-contain after:bg-no-repeat
+                        after:absolute after:top-1/2 after:w-[60px] after:h-[60px] after:opacity-0
+                        after:transition-all after:duration-300 after:pointer-events-none
+                        after:right-[-80px] after:-translate-y-1/2
+                        group-hover:after:opacity-80 group-hover:after:rotate-[-5deg]">
+              <h3 class="font-bold text-lg text-yellow-400">Login</h3>
+              <p class="text-sm text-gray-400">Secure and easy access to your gaming world.</p>
             </div>
           </div>
-          <div class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition hover:bg-green-600 cursor-pointer">
-            <h3 class="font-semibold text-lg mb-1">Sign Up Page</h3>
+
+          <!-- ITEM 2 -->
+          <div class="md:w-1/2 md:ml-auto md:pl-8">
+            <div class="group relative ml-12 md:ml-0 bg-[#1c1c1c] p-6 rounded-lg border border-yellow-400/30 
+                        hover:-translate-y-1 hover:shadow-lg hover:shadow-yellow-400/10 
+                        transition-all duration-300 cursor-pointer
+                        after:content-[''] after:bg-[url('ghost.png')] after:bg-contain after:bg-no-repeat
+                        after:absolute after:top-1/2 after:w-[60px] after:h-[60px] after:opacity-0
+                        after:transition-all after:duration-300 after:pointer-events-none
+                        after:left-[-80px] after:-translate-y-1/2 after:scale-x-[-1]
+                        group-hover:after:opacity-80 group-hover:after:rotate-[5deg]">
+              <h3 class="font-bold text-lg text-yellow-400">Signup</h3>
+              <p class="text-sm text-gray-400">Quickly create an account and join the community.</p>
+            </div>
           </div>
+
+          <!-- ITEM 3 -->
+          <div class="md:w-1/2 md:pr-8">
+            <div class="group relative ml-12 md:ml-0 bg-[#1c1c1c] p-6 rounded-lg border border-yellow-400/30 
+                        hover:-translate-y-1 hover:shadow-lg hover:shadow-yellow-400/10 
+                        transition-all duration-300 cursor-pointer
+                        after:content-[''] after:bg-[url('ghost.png')] after:bg-contain after:bg-no-repeat
+                        after:absolute after:top-1/2 after:w-[60px] after:h-[60px] after:opacity-0
+                        after:transition-all after:duration-300 after:pointer-events-none
+                        after:right-[-80px] after:-translate-y-1/2
+                        group-hover:after:opacity-80 group-hover:after:rotate-[-5deg]">
+              <h3 class="font-bold text-lg text-yellow-400">Landing Page</h3>
+              <p class="text-sm text-gray-400">A stunning welcome to our game marketplace.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="md:w-1/2 md:ml-auto md:pl-8">
+            <div class="group relative ml-12 md:ml-0 bg-[#1c1c1c] p-6 rounded-lg border border-yellow-400/30 
+                        hover:-translate-y-1 hover:shadow-lg hover:shadow-yellow-400/10 
+                        transition-all duration-300 cursor-pointer
+                        after:content-[''] after:bg-[url('ghost.png')] after:bg-contain after:bg-no-repeat
+                        after:absolute after:top-1/2 after:w-[60px] after:h-[60px] after:opacity-0
+                        after:transition-all after:duration-300 after:pointer-events-none
+                        after:left-[-80px] after:-translate-y-1/2 after:scale-x-[-1]
+                        group-hover:after:opacity-80 group-hover:after:rotate-[5deg]">
+              <h3 class="font-bold text-lg text-yellow-400">Roadmap & Moodboard</h3>
+              <p class="text-sm text-gray-400">Defining our vision and path forward.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="flex md:contents">
-          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
-            <div class="h-full w-6 flex items-center justify-center">
-              <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
-            </div>
-            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
-              <i class="fas fa-check-circle text-white"></i>
-            </div>
-          </div>
-          <div class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition hover:bg-green-600 cursor-pointer">
-            <h3 class="font-semibold text-lg mb-1">Mood Board Page</h3>
-          </div>
-        </div>
-
-
-
-        <div class="flex md:contents">
-          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
-            <div class="h-full w-6 flex items-center justify-center">
-              <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
-            </div>
-            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
-              <i class="fas fa-check-circle text-white"></i>
-            </div>
-          </div>
-          <div class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition hover:bg-green-600 cursor-pointer">
-            <h3 class="font-semibold text-lg mb-1">Road Map Page</h3>
-          </div>
-        </div>
-        
-        
-        <div class="flex md:contents">
-          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
-            <div class="h-full w-6 flex items-center justify-center">
-              <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
-            </div>
-            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
-              <i class="fas fa-check-circle text-white"></i>
-            </div>
-          </div>
-          <div class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition hover:bg-green-600 cursor-pointer">
-            <h3 class="font-semibold text-lg mb-1">CRUD</h3>
-            <p class="text-sm leading-tight text-gray-200">User Management</p>
-            <p class="text-sm leading-tight text-gray-200">Event Management </p>
-            <p class="text-sm leading-tight text-gray-200">Orders and Transactions</p>
-            </div>
-            </div>
-          </div>
-        </div>
-
-     
-
       </div>
     </div>
-  </div>
-  <div class="flex justify-center mt-8">
-    <a href="/user"
-       class="inline-block px-6 py-3 rounded-lg bg-white text-black font-semibold shadow transition
-              hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 hover:text-white hover:scale-105
-              focus:outline-none focus:ring-2 focus:ring-purple-500"
-    >
-      back to landing
-    </a>
-  </div>
-    </div>
+  </main>
 
   <footer>
-<?= view('/Components/buttons/footer')?>
+    <?= view('Components/footer') ?>
   </footer>
 </body>
 </html>
