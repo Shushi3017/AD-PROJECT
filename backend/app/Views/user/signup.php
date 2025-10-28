@@ -1,4 +1,4 @@
-<?php // backend/app/Views/user/singup.php ?>
+<?php // backend/app/Views/user/signup.php ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,14 +24,60 @@
                 <?= function_exists('csrf_field') ? csrf_field() : '' ?>
 
                 <label class="block">
-                    <span class="text-sm text-white hover:text-yellow-400 transition">Full name</span>
+                    <span class="text-sm text-white hover:text-yellow-400 transition">Nickname</span>
                     <input
-                        name="name"
-                        value="<?= isset($old['name']) ? esc($old['name']) : (function_exists('old') ? old('name') : '') ?>"
+                        name="nickname"
+                        value="<?= isset($old['nickname']) ? esc($old['nickname']) : (function_exists('old') ? old('nickname') : '') ?>"
                         class="mt-2 w-full bg-transparent border border-gray-700 rounded px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition"
-                        placeholder="Full name"
+                        placeholder="Nickname"
                         required
                     />
+                </label>
+
+                <label class="block">
+                    <span class="text-sm text-white hover:text-yellow-400 transition">First name</span>
+                    <input
+                        name="first_name"
+                        value="<?= isset($old['first_name']) ? esc($old['first_name']) : (function_exists('old') ? old('first_name') : '') ?>"
+                        class="mt-2 w-full bg-transparent border border-gray-700 rounded px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition"
+                        placeholder="First name"
+                        required
+                    />
+                </label>
+
+                <label class="block">
+                    <span class="text-sm text-white hover:text-yellow-400 transition">Middle name</span>
+                    <input
+                        name="middle_name"
+                        value="<?= isset($old['middle_name']) ? esc($old['middle_name']) : (function_exists('old') ? old('middle_name') : '') ?>"
+                        class="mt-2 w-full bg-transparent border border-gray-700 rounded px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition"
+                        placeholder="Middle name"
+                    />
+                </label>
+
+                <label class="block">
+                    <span class="text-sm text-white hover:text-yellow-400 transition">Last name</span>
+                    <input
+                        name="last_name"
+                        value="<?= isset($old['last_name']) ? esc($old['last_name']) : (function_exists('old') ? old('last_name') : '') ?>"
+                        class="mt-2 w-full bg-transparent border border-gray-700 rounded px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition"
+                        placeholder="Last name"
+                        required
+                    />
+                </label>
+
+                <label class="block">
+                    <span class="text-sm text-white hover:text-yellow-400 transition">Gender</span>
+                    <select
+                        name="gender"
+                        class="mt-2 w-full bg-transparent border border-gray-700 rounded px-3 py-2 text-white focus:outline-none focus:border-yellow-400 transition"
+                        required
+                    >
+                        <option value="" class="text-gray-500">Select gender</option>
+                        <option value="male" class="text-black" <?= (isset($old['gender']) && $old['gender'] === 'male') ? 'selected' : '' ?>>Male</option>
+                        <option value="female" class="text-black" <?= (isset($old['gender']) && $old['gender'] === 'female') ? 'selected' : '' ?>>Female</option>
+                        <option value="other" class="text-black" <?= (isset($old['gender']) && $old['gender'] === 'other') ? 'selected' : '' ?>>Other</option>
+                    </select>
                 </label>
 
                 <label class="block">
@@ -62,32 +108,47 @@
                     <button
                         type="button"
                         id="togglePassword"
-                        aria-controls="password"
                         aria-pressed="false"
                         class="absolute inset-y-0 right-2 top-8 flex items-center px-2 text-white hover:text-yellow-400 transition"
                         title="Show / hide password"
                     >
-                        <!-- eye icon -->
-                        <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <svg id="eyeOpenPwd" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M10 4C5 4 1.7 7.1.6 10c1.1 2.9 4.4 6 9.4 6s8.3-3.1 9.4-6c-1.1-2.9-4.4-6-9.4-6zM10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
                         </svg>
-                        <!-- eye-off (hidden by default) -->
-                        <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="currentColor">
+                        <svg id="eyeClosedPwd" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M3 3l18 18-1.5 1.5L15.8 19C13.9 19.6 12 20 10 20 5 20 1.7 16.9.6 14c.6-1.4 1.8-3.1 3.7-4.5L2.5 6.7 3 6.2 3 3zm7 5a4 4 0 0 1 4 4c0 .8-.2 1.6-.6 2.3l-5.7-5.7c.7-.4 1.4-.6 2.3-.6zM10 4c5 0 8.3 3.1 9.4 6-.4.9-1.1 1.9-2 2.8L14 9.4c.7-.4 1.2-1.1 1.2-1.9 0-1.4-1.1-2.5-2.5-2.5-.8 0-1.5.5-1.9 1.2L6.8 4C7.8 4 8.9 4 10 4z"/>
                         </svg>
                     </button>
                 </div>
 
-                <label class="block">
-                    <span class="text-sm text-white hover:text-yellow-400 transition">Confirm password</span>
-                    <input
-                        type="password"
-                        name="password_confirm"
-                        class="mt-2 w-full bg-transparent border border-gray-700 rounded px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition"
-                        placeholder="••••••••"
-                        required
-                    />
-                </label>
+                <div class="relative">
+                    <label class="block">
+                        <span class="text-sm text-white hover:text-yellow-400 transition">Confirm password</span>
+                        <input
+                            id="password_confirm"
+                            type="password"
+                            name="password_confirm"
+                            class="mt-2 w-full bg-transparent border border-gray-700 rounded px-3 py-2 pr-10 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition"
+                            placeholder="••••••••"
+                            required
+                        />
+                    </label>
+
+                    <button
+                        type="button"
+                        id="togglePasswordConfirm"
+                        aria-pressed="false"
+                        class="absolute inset-y-0 right-2 top-8 flex items-center px-2 text-white hover:text-yellow-400 transition"
+                        title="Show / hide confirmation password"
+                    >
+                        <svg id="eyeOpenConfirm" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 4C5 4 1.7 7.1.6 10c1.1 2.9 4.4 6 9.4 6s8.3-3.1 9.4-6c-1.1-2.9-4.4-6-9.4-6zM10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                        </svg>
+                        <svg id="eyeClosedConfirm" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 3l18 18-1.5 1.5L15.8 19C13.9 19.6 12 20 10 20 5 20 1.7 16.9.6 14c.6-1.4 1.8-3.1 3.7-4.5L2.5 6.7 3 6.2 3 3zm7 5a4 4 0 0 1 4 4c0 .8-.2 1.6-.6 2.3l-5.7-5.7c.7-.4 1.4-.6 2.3-.6zM10 4c5 0 8.3 3.1 9.4 6-.4.9-1.1 1.9-2 2.8L14 9.4c.7-.4 1.2-1.1 1.2-1.9 0-1.4-1.1-2.5-2.5-2.5-.8 0-1.5.5-1.9 1.2L6.8 4C7.8 4 8.9 4 10 4z"/>
+                        </svg>
+                    </button>
+                </div>
 
                 <div class="flex items-center justify-between gap-3">
                     <button
@@ -106,6 +167,16 @@
                     </a>
                 </div>
 
+                <div class="mt-2">
+                    <a href="/change-password"
+                       class="block text-center w-full px-4 py-2 rounded border border-gray-600 text-white hover:text-yellow-400 hover:border-yellow-400 transition"
+                       role="button"
+                       aria-label="Change password"
+                    >
+                        Change password
+                    </a>
+                </div>
+
             </form>
 
             <p class="mt-4 text-center text-sm text-gray-400">
@@ -116,22 +187,38 @@
     </div>
 
     <script>
-        // Password toggle behavior (unobtrusive)
         (function () {
-            const toggle = document.getElementById('togglePassword');
+            // Password toggle
+            const togglePwd = document.getElementById('togglePassword');
             const pwd = document.getElementById('password');
-            const eyeOpen = document.getElementById('eyeOpen');
-            const eyeClosed = document.getElementById('eyeClosed');
+            const eyeOpenPwd = document.getElementById('eyeOpenPwd');
+            const eyeClosedPwd = document.getElementById('eyeClosedPwd');
 
-            if (!toggle || !pwd) return;
+            if (togglePwd && pwd) {
+                togglePwd.addEventListener('click', function () {
+                    const isHidden = pwd.type === 'password';
+                    pwd.type = isHidden ? 'text' : 'password';
+                    togglePwd.setAttribute('aria-pressed', String(isHidden));
+                    eyeOpenPwd.classList.toggle('hidden');
+                    eyeClosedPwd.classList.toggle('hidden');
+                });
+            }
 
-            toggle.addEventListener('click', function () {
-                const isHidden = pwd.type === 'password';
-                pwd.type = isHidden ? 'text' : 'password';
-                toggle.setAttribute('aria-pressed', String(isHidden));
-                eyeOpen.classList.toggle('hidden');
-                eyeClosed.classList.toggle('hidden');
-            });
+            // Confirm password toggle
+            const toggleConfirm = document.getElementById('togglePasswordConfirm');
+            const pwdConfirm = document.getElementById('password_confirm');
+            const eyeOpenConfirm = document.getElementById('eyeOpenConfirm');
+            const eyeClosedConfirm = document.getElementById('eyeClosedConfirm');
+
+            if (toggleConfirm && pwdConfirm) {
+                toggleConfirm.addEventListener('click', function () {
+                    const isHidden = pwdConfirm.type === 'password';
+                    pwdConfirm.type = isHidden ? 'text' : 'password';
+                    toggleConfirm.setAttribute('aria-pressed', String(isHidden));
+                    eyeOpenConfirm.classList.toggle('hidden');
+                    eyeClosedConfirm.classList.toggle('hidden');
+                });
+            }
         })();
     </script>
 </body>
